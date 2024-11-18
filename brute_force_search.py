@@ -1,7 +1,7 @@
 import gurobipy as gp
 import numpy as np
  
-def best_dist_dual(n, m, inter_cand_dist_vals, weight_vals):
+def best_dist_dual(n, m, inter_cand_dist_vals):
     """
     given a number of distinct voter locations (n) candidates (m) possible inter-candidate distance values (inter_cand_dist_vals), and possibly a dictionary of inter-candidate distances (inter_cand_dist_vec), solves the QCIP written in the overleaf. 
 
@@ -128,7 +128,7 @@ def x_str(i, j, r):
 
 
 
-result, obj = best_dist_dual(100,3, [0,2, 4, 8])
+result, obj = best_dist_dual(50,3, [0,2, 4, 8])
 
 for key, val in result.items():
     print(key, val)
