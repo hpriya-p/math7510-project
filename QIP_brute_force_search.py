@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import gurobipy as gp
 import numpy as np
  
