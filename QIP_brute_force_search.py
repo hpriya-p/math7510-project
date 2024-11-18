@@ -138,7 +138,7 @@ def x_str(i, j, r):
 
 
 
-result, obj = best_dist_dual(10,3, [0,2, 4], [0, 1,2])
+result, obj = best_dist_dual(50,3, [0,2, 4, 8], [0, 1,2])
 
 for key, val in result.items():
     print(key, val)
